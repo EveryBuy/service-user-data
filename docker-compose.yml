@@ -3,9 +3,9 @@ services:
 
   postgres_db:
     image: 'postgres:15-alpine'
-    container_name: db
+    container_name: user-info
     environment:
-      - POSTGRES_DB=auth
+      - POSTGRES_DB=user
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
