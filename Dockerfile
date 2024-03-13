@@ -10,7 +10,7 @@ RUN ./gradlew build
 
 FROM openjdk:17-alpine
 
-COPY --from=build /build/libs/service-authority-0.0.1.jar /app/service-authority-0.0.1.jar
+COPY --from=build /build/libs/service-user-0.0.1.jar /app/service-user-0.0.1.jar
 
-CMD ["java", "-jar", "app/service-authority-0.0.1.jar"]
+CMD ["java", "-jar", "app/service-user-0.0.1.jar"]
 
